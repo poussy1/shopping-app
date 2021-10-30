@@ -1,0 +1,14 @@
+.content-container {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .card {
+    margin-right: 40px;
+    margin-bottom: 103px;
+  }
+  .card:nth-child(3n + 0) {
+    margin-right: 0px;
+  }
+}

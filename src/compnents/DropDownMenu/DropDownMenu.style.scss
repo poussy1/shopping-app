@@ -1,0 +1,41 @@
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: max-content;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.hidden {
+  display: none;
+}
+.expanded {
+  display: block;
+}
+.icon {
+  margin-left: 10px;
+}
+.button-text {
+  font-family: "Raleway", cursive;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.8px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.dropdown-item {
+  margin-top: 10px;
+  font-family: "Raleway", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28.8px;
+}

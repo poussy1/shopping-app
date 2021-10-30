@@ -1,0 +1,22 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+  > li {
+    list-style-type: none;
+    margin-right: 32px;
+    text-transform: uppercase;
+    line-height: 19.2px;
+    font-weight: 400px;
+    color: #1d1f22;
+    margin-top: 33px;
+
+    &.active {
+      color: #5ece7b;
+      border-bottom: solid 1px #5ece7b;
+      padding: 0px 15px 30px;
+      margin-right: 17px;
+      font-weight: 600;
+    }
+  }
+}

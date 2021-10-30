@@ -1,0 +1,25 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 11px 16px 16px 16px;
+
+  .product-img {
+    width: 344px;
+    height: 310px;
+  }
+  .product-title {
+    font-family: "Raleway", cursive;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #1d1f22;
+    margin-top: 24px;
+    opacity: 70%;
+  }
+  .product-price {
+    font-family: "Raleway", cursive;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1d1f22;
+  }
+}
