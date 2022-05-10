@@ -1,0 +1,25 @@
+.cart-container {
+  margin-left: 100px;
+  margin-right: 242px;
+  .bag-item-container {
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid lightgrey;
+  }
+  > ul > li {
+    list-style-type: none;
+  }
+  > ul {
+    padding: 0px;
+  }
+
+  .item-details-sizes .button-container > button {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+  }
+}

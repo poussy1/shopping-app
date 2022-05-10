@@ -1,12 +1,15 @@
-.container {
+%row {
   display: flex;
   flex-direction: row;
+}
+.header-container {
   justify-content: space-between;
   height: 80px;
   align-items: center;
-
-  .right-component {
-    display: flex;
-    flex-direction: row;
+  padding-left: 101px;
+  padding-right: 87px;
+  @extend %row;
+  > section {
+    @extend %row;
   }
 }

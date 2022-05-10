@@ -7,8 +7,8 @@
   .card {
     margin-right: 40px;
     margin-bottom: 103px;
-  }
-  .card:nth-child(3n + 0) {
-    margin-right: 0px;
+    &:nth-child(3n + 0) {
+      margin-right: 0px;
+    }
   }
 }

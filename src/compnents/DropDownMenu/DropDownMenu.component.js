@@ -2,38 +2,28 @@ import { Component } from "react";
 import ArrowDownIcon from "../Icons/ArrowDownIcon";
 import ArrowUpIcon from "../Icons/ArrowUpIcon";
 import "./DropDownMenu.style.scss";
+
 class DropDownMenu extends Component {
   constructor(props) {
     super(props);
     this.state = { expanded: false };
-    this.handleClick = this.handleClick.bind(this);
   }
-  handleClick() {
+
+  handleClick = () => {
     this.setState({ expanded: !this.state.expanded });
-  }
-  renderItems() {
-    if (!this.props.items) {
-      return null;
-    }
-    return this.props.items.map((item) => (
-      <p class="dropdown-item" href="#">
-        {item}
-      </p>
-    ));
-  }
+  };
+
   render = () => (
-    <div className="dropdown">
+    <div className="dropdown-container">
       <button onClick={this.handleClick}>
-        <span className="button-text">$</span>
-        {this.state.expanded ? (
-          <ArrowUpIcon classes="icon" />
-        ) : (
-          <ArrowDownIcon classes="icon" />
-        )}
+        <span>$</span>
+        {this.state.expanded ? <ArrowUpIcon /> : <ArrowDownIcon />}
       </button>
-      <div className={this.state.expanded ? "expanded" : "hidden"}>
-        <div className="dropdown-menu">{this.renderItems()}</div>
-      </div>
+      <ul>
+        {this.props.items?.length > 0 &&
+          this.state.expanded &&
+          this.props.items.map((item) => <li>{item}</li>)}
+      </ul>
     </div>
   );
 }

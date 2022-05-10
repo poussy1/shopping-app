@@ -1,0 +1,27 @@
+.modal-container {
+  > section:first-child {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    @at-root {
+      .header-container {
+        z-index: 30;
+        background: white;
+        position: sticky;
+        width: 100 vw;
+      }
+    }
+  }
+  > section:last-child {
+    position: absolute;
+    right: 70px;
+    z-index: 2;
+  }
+}
